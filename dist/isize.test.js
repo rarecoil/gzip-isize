@@ -13,7 +13,7 @@ const child_process_1 = require("child_process");
 const path_1 = require("path");
 // Get ISIZE from `tar` in order to check our own calculation
 const getCompressionInfoFromGzip = (filePath) => {
-    let result = child_process_1.spawnSync('/usr/bin/gzip', ['-l', filePath]);
+    let result = child_process_1.spawnSync('/usr/bin/gzip', ['-l', filePath], { stdio: 'pipe' });
     let stdout = result.stdout.toString().split("\n");
     let re = new RegExp("\\s+(?<comp>\\d+)\\s+(?<uncomp>\\d+)");
     if (stdout.length === 3) {
