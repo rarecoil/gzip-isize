@@ -10,11 +10,11 @@ compression ratio statistics for a GZIPped file. This module is useful
 for validation when trying to get a sense of what a GZip file will
 decompress to without actually attempting to decompress it.
 
-Other popular modules get the size by actually doing the work, which can
-lead to issues with [decompression bomb attacks](https://en.wikipedia.org/wiki/Zip_bomb).
-While not entirely reliable, the ISIZE record gives you some
-understanding of what you may be decompressing before you run yourself
-out of RAM or disk space.
+Other popular modules get the size by actually doing the work. On
+smaller systems with limited resources or when extracting untrusted
+GZIP files, you may inadvertently end up with resource exhaustion
+during the extraction process. This module's function makes a good
+first-line sanity check before deeper analysis during extraction.
 
 ## Usage
 
