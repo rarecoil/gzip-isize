@@ -1,0 +1,33 @@
+{
+  "name": "gzip-isize",
+  "version": "1.0.0",
+  "description": "Gets GZIP compressed size, uncompressed size, and compression ratio without extraction.",
+  "main": "dist/isize.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rarecoil/gzip-isize.git"
+  },
+  "keywords": [
+    "gzip",
+    "isize",
+    "compression"
+  ],
+  "author": "rarecoil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rarecoil/gzip-isize/issues"
+  },
+  "homepage": "https://github.com/rarecoil/gzip-isize#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^10.12.21",
+    "jest": "^24.1.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.3.1"
+  },
+  "dependencies": {}
+}
