@@ -1,5 +1,8 @@
 # gzip-isize
 
+[![Build Status](https://travis-ci.org/rarecoil/gzip-isize.svg?branch=master)](https://travis-ci.org/rarecoil/gzip-isize) [![Known Vulnerabilities](https://snyk.io/test/github/rarecoil/gzip-isize/badge.svg?targetFile=package.json)](https://snyk.io/test/github/rarecoil/gzip-isize?targetFile=package.json)
+
+
 ### Get GZIP size statistics without extracting the file
 
 This module uses the GZIP ISIZE record in order to get size and
