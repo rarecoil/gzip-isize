@@ -1,7 +1,7 @@
 {
   "name": "gzip-isize",
-  "version": "1.0.0",
-  "description": "Gets GZIP compressed size, uncompressed size, and compression ratio without extraction.",
+  "version": "1.0.1",
+  "description": "Gets GZIP compressed size, uncompressed size, and compression ratio without extraction. TypeScript-friendly.",
   "main": "dist/isize.js",
   "scripts": {
     "build": "npx tsc",
@@ -13,6 +13,9 @@
   },
   "keywords": [
     "gzip",
+    "size",
+    "compressed",
+    "file",
     "isize",
     "compression"
   ],
