@@ -29,10 +29,9 @@ const getCompressionInfoFromGzip = (filePath) => {
     }
 };
 const testFile = path_1.resolve(path_1.join(__dirname, '..', 'test', 'file.tgz'));
-it('gives the same file size info as `gzip -l`', () => __awaiter(this, void 0, void 0, function* () {
-    let gzipInfo = getCompressionInfoFromGzip(testFile);
+it('passes the test file', () => __awaiter(this, void 0, void 0, function* () {
     let isizeInfo = yield isize_1.ISize.get(testFile);
-    expect(isizeInfo.compressedSize).toBe(gzipInfo[0]);
-    expect(isizeInfo.originalSize).toBe(gzipInfo[1]);
+    expect(isizeInfo.compressedSize).toBe(146);
+    expect(isizeInfo.originalSize).toBe(10240);
 }));
 //# sourceMappingURL=isize.test.js.map

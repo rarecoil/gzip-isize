@@ -22,11 +22,9 @@ const getCompressionInfoFromGzip = (filePath:string):Array<number> => {
 const testFile = resolve(join(__dirname, '..', 'test', 'file.tgz'));
 
 
-it('gives the same file size info as `gzip -l`', async () => {
-    let gzipInfo  = getCompressionInfoFromGzip(testFile);
+it('passes the test file', async () => {
     let isizeInfo = await ISize.get(testFile);
-
-    expect(isizeInfo.compressedSize).toBe(gzipInfo[0]);
-    expect(isizeInfo.originalSize).toBe(gzipInfo[1]);
+    expect(isizeInfo.compressedSize).toBe(146);
+    expect(isizeInfo.originalSize).toBe(10240);
 });
 
