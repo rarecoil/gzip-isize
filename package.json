@@ -1,6 +1,6 @@
 {
   "name": "gzip-isize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gets GZIP compressed size, uncompressed size, and compression ratio without extraction. TypeScript-friendly.",
   "main": "dist/isize.js",
   "scripts": {
@@ -28,8 +28,8 @@
   "devDependencies": {
     "@types/jest": "^24.0.0",
     "@types/node": "^10.12.21",
-    "jest": "^24.1.0",
-    "ts-jest": "^23.10.5",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.3.1"
   },
   "dependencies": {}
